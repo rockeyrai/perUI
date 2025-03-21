@@ -1,0 +1,50 @@
+.svg-container {
+  position: relative;
+  width: 50vw;
+  height: 50vh;
+}
+
+.svg-container svg {
+  position: absolute;
+  top: 40;
+  left: 50;
+  width: 100px;
+  height: 100px;
+
+}
+
+.svg-container svg:nth-of-type(3),
+.svg-container svg:nth-of-type(4) {
+  position: absolute;
+  top: 5;
+  left: 300;
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes slideMask1 {
+  from {
+    x: -100%;
+  }
+  to {
+    x: 180%;
+  }
+}
+
+@keyframes slideMask2 {
+  from {
+    x: -100%;
+  }
+  to {
+    x: 180%;
+  }
+}
+
+.mask-rect-1 {
+  animation: slideMask1 2s ease infinite;
+}
+
+.mask-rect-2 {
+  animation: slideMask2 2s ease infinite;
+  animation-delay: 2s; /* Delays start of the second animation */
+}

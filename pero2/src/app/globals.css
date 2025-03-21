@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --border-radius--menu-wrapper : 30px;
+  --border-radius--menu-link : 22px
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.menuLink {
+  @apply gap-x-2 max-md:gap-x-1 text-white cursor-pointer border flex-none justify-between items-center text-sm max-sm:text-xs font-normal leading-[114.286%] max-sm:leading-none no-underline transition-[background-color] duration-[0.2s] ease-[ease-in-out] flex py-4 max-sm:py-2 px-6 max-sm:px-3 rounded-[80px] border-solid border-[#222325] hover:bg-[#36353a];
+}
+
+
+.transition-custom {
+  transition-property: all;
+  transition-duration: 0.3s; 
+  transition-timing-function: ease-in-out;
+}
+
+
+.animateNav {
+  animation-name: slide-in;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+  animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1); /* Smooth easing */
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translate3d(0px, 3vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    height: 0px;
+    opacity: 0;
+  }
+  40% {
+    transform: translate3d(0px, 2vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    height: 40%;
+    opacity: 0;
+  }
+  70% {
+    transform: translate3d(0px, 1vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    height: 75%;
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0px, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    height: fit-content;
+    opacity: 1;
+  }
+}
+
+
