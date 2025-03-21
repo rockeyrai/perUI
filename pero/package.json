@@ -9,10 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@tailwindcss/cli": "^4.0.14",
-    "next": "15.2.3",
+    "framer-motion": "^12.5.0",
+    "glslify": "^7.1.1",
+    "gsap": "^3.12.7",
+    "lil-gui": "^0.20.0",
+    "next": "^15.2.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "three": "^0.174.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -20,6 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/three": "^0.174.0",
     "eslint": "^9",
     "eslint-config-next": "15.2.3",
     "tailwindcss": "^4.0.14",
