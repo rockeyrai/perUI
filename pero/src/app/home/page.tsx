@@ -81,6 +81,9 @@ const page = () => {
           Contact
         </div>
       </div>
+
+
+      
       {/* <ImageSlider /> */}
       <Features1 />
       <div className="h-screen w-[100%] px-0 flex justify-center items-center bg-black">

@@ -10,16 +10,6 @@ const Hero = () => {
           loop
           muted
         />
-        <div className="relative z-10 flex justify-between items-center px-10 py-5">
-          <div className="flex items-center text-white gap-3">
-            <img
-              src="/logo.png"
-              alt="Logo"
-              className="w-12 h-12 bg-white rounded-2xl"
-            />
-            <p className="text-lg font-semibold">Portfolio Nepal</p>
-          </div>
-        </div>
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
           <div className="w-2/3">
             <h1 className="text-7xl font-bold mb-4">

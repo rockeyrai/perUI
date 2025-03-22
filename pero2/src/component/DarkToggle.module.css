@@ -24,7 +24,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #31373d;
+  background-color: #3b3b3a;
   transition: .4s;
   border-radius: 30px;
 }
@@ -38,7 +38,7 @@
   left: 2px;
   bottom: 2px;
   z-index: 2;
-  background-color: #e8e8e8;
+  background-color: #202120;
   transition: .4s;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .moon svg {
-  fill: #73C0FC;
+  fill: #6b7280;
   position: absolute;
   top: 5px;
   left: 5px;
@@ -100,13 +100,11 @@
 }
 
 .input:checked + .slider {
-  background-color: #333333;
+  background: #cfcfce;
 }
 
-.input:focus + .slider {
-  box-shadow: 0 0 1px #183153;
-}
 
 .input:checked + .slider:before {
   transform: translateX(30px);
+  background: #f2f3f3;
 }

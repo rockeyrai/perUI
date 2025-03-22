@@ -1,21 +1,14 @@
-import DarkToggle from "@/component/DarkToggle";
-import Hero from "@/component/Hero";
-import StickyBottomNavigation from "@/component/Navbar";
-import SVg from "@/component/Svg";
+import ContactSection from '@/component/Contact'
+import DarkToggle from '@/component/DarkToggle'
+import React from 'react'
 
-
-export default function Home() {
+const App = () => {
   return (
-<>
-<DarkToggle/>
-<Hero/>
-<StickyBottomNavigation/>
-<div className="h-screen flex">
-  <h1>hdfadfa</h1>
-<SVg/>
-
-</div>
-
-</>
-  );
+    <div>
+      <DarkToggle/>
+      <ContactSection/>
+    </div>
+  )
 }
+
+export default App
